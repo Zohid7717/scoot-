@@ -1,0 +1,43 @@
+/*
+!----------------------- Обнуляющий стиль --------------------!
+*/
+@import "_nullstyle";
+/*
+!---------------------- Подключения шрифта -------------------!
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@400;700&display=swap');
+
+// font-family: 'Lexend Deca';
+// font-family: 'Space Mono';
+/*
+!---------------------- body -------------------!
+*/
+body {
+  font-family: 'Space Mono';
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-flex;
+  width: 180px;
+  height: 53px;
+  border: 3px solid #FCB72B;
+  background: #FCB72B;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  &:hover{
+    background: transparent;
+    color: #FCB72B;
+  }
+}
+
+/*
+!---------------------header--------------------!
+*/
+// @import "_header";
