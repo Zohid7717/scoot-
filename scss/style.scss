@@ -12,11 +12,22 @@
 /*
 !---------------------- body -------------------!
 */
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Space Mono';
   font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-.u-container{
+
+.u-container {
   max-width: 1150px;
   padding: 0px 20px;
   margin: 0 auto;
@@ -36,7 +47,8 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.5s;
-  &:hover{
+
+  &:hover {
     background: transparent;
     color: #FCB72B;
   }
@@ -58,3 +70,11 @@ body {
 !---------------------facilities--------------------!
 */
 @import "_facilities";
+/*
+!---------------------app--------------------!
+*/
+@import "_app";
+/*
+!---------------------footer--------------------!
+*/
+@import "_footer";

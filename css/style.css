@@ -82,9 +82,18 @@ h1, h2, h3, h4, h5, h6 {
 /*
 !---------------------- body -------------------!
 */
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Space Mono";
   font-weight: 700;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .u-container {
@@ -119,6 +128,13 @@ body {
 body {
   position: relative;
   height: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background: #fff;
 }
 
 .header__container {
@@ -223,6 +239,7 @@ body {
 !---------------------hero--------------------!
 */
 .hero {
+  margin-top: 97px;
   background: url("../img/image/hero-bg.jpg") 0px 0px no-repeat;
   background-position: center;
   background-size: cover;
@@ -437,3 +454,286 @@ body {
 /*
 !---------------------facilities--------------------!
 */
+.facilities {
+  margin-top: 200px;
+}
+.facilities__container-list ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 155px;
+}
+.facilities__container-list li {
+  display: flex;
+  justify-content: space-between;
+}
+.facilities__container-list li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.facilities__container-list li:nth-child(even) .facilities__container-right::after {
+  left: -510px;
+}
+.facilities__container-list li:nth-child(1) .facilities__container-arry {
+  left: -130px;
+  bottom: 0;
+}
+.facilities__container-list li:nth-child(2) .facilities__container-arry {
+  top: 0;
+  right: 200px;
+}
+.facilities__container-list li:nth-child(3) .facilities__container-arry {
+  top: 85px;
+  left: 255px;
+}
+.facilities__container-content {
+  width: 445px;
+}
+.facilities__container-content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+.facilities__container-content p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.facilities__container-right {
+  position: relative;
+}
+.facilities__container-right::after {
+  display: block;
+  content: "";
+  width: 445px;
+  height: 445px;
+  background: #E5ECF4;
+  position: absolute;
+  top: 0;
+  left: 510px;
+  z-index: -1;
+  border-radius: 50%;
+}
+.facilities__container-image {
+  min-width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.facilities__container-arry {
+  position: absolute;
+}
+
+@media (max-width: 941px) {
+  .facilities__container-list li {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 56px;
+  }
+  .facilities__container-list li:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .facilities__container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 777px) {
+  .facilities__container-content {
+    row-gap: 32px;
+  }
+  .facilities__container-content h2 {
+    font-size: 32px;
+  }
+  .facilities__container-list li:nth-child(1) .facilities__container-arry {
+    left: 0px;
+    bottom: 0;
+  }
+}
+@media (max-width: 519px) {
+  .facilities__container-right {
+    width: 100%;
+  }
+  .facilities__container-image {
+    min-width: 100%;
+    height: auto;
+  }
+  .facilities__container-image img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 500px) {
+  .facilities__container-content {
+    width: 100%;
+  }
+}
+/*
+!---------------------app--------------------!
+*/
+.app {
+  margin-top: 330px;
+  background: #495567;
+}
+.app__container {
+  display: flex;
+  padding: 102px 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.app__container h2 {
+  max-width: 415px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+}
+.app__button {
+  display: flex;
+  align-items: center;
+}
+.app__button ul {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+.app__button a {
+  display: flex;
+  padding: 8px 16px 9px 16px;
+  background: #E5ECF4;
+  border-radius: 4px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  position: relative;
+  z-index: 2;
+}
+.app__button-text h5 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
+  color: #495567;
+}
+.app__button-text p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: #495567;
+}
+
+.circle-box {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  right: -328px;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+}
+
+.circle-1,
+.circle-2 {
+  width: 347px;
+  height: 347px;
+  opacity: 1;
+  border: 15px solid #E5ECF4;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.circle-3 {
+  width: 347px;
+  height: 347px;
+  opacity: 1;
+  background: #E5ECF4;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+@media (max-width: 865px) {
+  .app__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 440px) {
+  .app__button ul {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+/*
+!---------------------footer--------------------!
+*/
+footer {
+  position: relative;
+  background: #333A44;
+}
+
+.footer__container {
+  display: flex;
+  padding: 35px 20px 32px 20px;
+  -moz-column-gap: 58.58px;
+       column-gap: 58.58px;
+  align-items: center;
+}
+.footer__menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list ul {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.footer__list a {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  transition: 0.3s;
+}
+.footer__list a:hover {
+  color: #FCB72B;
+}
+.footer__socials ul {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.footer__socials svg {
+  fill: #FCB72B;
+  transition: 0.3s;
+}
+.footer__socials svg:hover {
+  fill: #E5ECF4;
+}
+
+@media (max-width: 650px) {
+  .footer__container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .footer__menu {
+    flex-direction: column;
+    row-gap: 85px;
+  }
+  .footer__list ul {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+  }
+}
