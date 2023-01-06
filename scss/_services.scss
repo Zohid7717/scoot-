@@ -1,0 +1,120 @@
+.services {
+  margin-top: 160px;
+
+  &__container {
+    position: relative;
+
+    ul {
+      display: flex;
+      column-gap: 30px;
+      position: relative;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07143px;
+      color: #495567;
+    }
+
+    p {
+      font-family: 'Lexend Deca';
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #939CAA;
+    }
+  }
+
+  &__line {
+    width: 5000px;
+    height: 15px;
+    background: #E5ECF4;
+    position: absolute;
+    top: 41.5px;
+    right: 30.3%;
+  }
+
+  &__container-image {
+    display: flex;
+    width: 96px;
+    height: 96px;
+    background-color: #FCB72B;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 941px) {
+  .services__container {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      flex-direction: column;
+      row-gap: 40px;
+      width: 74.61%;
+    }
+
+    li {
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 13%;
+    }
+  }
+
+  .services__container-image {
+    min-width: 96px;
+  }
+
+  .services__container-text {
+    row-gap: 27px;
+  }
+
+  .services__line {
+    left: 19%;
+    top: auto;
+    bottom: 15%;
+    width: 15px;
+    height: 700px;
+    z-index: -1;
+  }
+
+  .services {
+    margin-top: 122px;
+  }
+}
+
+@media (max-width: 588px) {
+  .services__line {
+    display: none;
+  }
+
+  .services__container {
+    li {
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      row-gap: 24px;
+    }
+  }
+  .services__container-text{
+    h2{
+      font-size: 20px;
+    }
+  }
+}

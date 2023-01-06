@@ -16,6 +16,11 @@ body {
   font-family: 'Space Mono';
   font-weight: 700;
 }
+.u-container{
+  max-width: 1150px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
 
 .btn {
   display: inline-flex;
@@ -40,4 +45,16 @@ body {
 /*
 !---------------------header--------------------!
 */
-// @import "_header";
+@import "_header";
+/*
+!---------------------hero--------------------!
+*/
+@import "_hero";
+/*
+!---------------------sevices--------------------!
+*/
+@import "_services";
+/*
+!---------------------facilities--------------------!
+*/
+@import "_facilities";
